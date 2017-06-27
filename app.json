@@ -1,0 +1,12 @@
+{
+    "id": "nu.dijker.awesomehomeyinfoandcookie",
+    "name": {
+        "en": "Awesome Homey Info and Cookie"
+    },
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Geurt Dijker",
+        "email": "Homey.Apps@dijker.nu"
+    }
+}

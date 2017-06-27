@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Awsome Homey Info and Cookie</h1>
+        <fieldset style="top:0; margin: 5px; width: 96%; height:auto">
+          <legend>Log</legend>
+		        <textarea id="logtextarea" style="margin: 2px; width: 98%; height:530px"></textarea>
+        </fieldset>
+   <bottom><fieldset style="position:fixed;bottom:0px; margin: 5px; width: 96%">
+   <legend>Settings</legend>
+   <div class="field row">
+        <a href="javascript:window.location.reload(true)" onClick="SetCookie('homey_suppressbrowserwarning','1',999)"> <button type="button" name="accept" class="btn btn-success right"> SuppressWarning </button>
+    </div>
+  </fieldset></bottom>
+        <script type="text/javascript">
+            var textarea = document.getElementById('logtextarea');
+            textarea.scrollTop = textarea.scrollHeight;
+            var _myLog = '';
+            var intervalS = 5;
+            var appendLog ;
+            var interval ;
+            var maxLogLength =1029;
+            function onHomeyReady(){
+                Homey.ready()
+            }
+              function SetCookie(c_name,value,expiredays) {
+                var exdate=new Date()
+                exdate.setDate(exdate.getDate()+expiredays)
+                document.cookie=c_name+ "=" +escape(value)+
+                ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())+"; path=/"
+                location.reload()
+              }
+        </script>
+    </body>
+</html>
