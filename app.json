@@ -3,7 +3,9 @@
     "name": {
         "en": "AwesomeHomeyInfoCookie"
     },
-    "version": "0.0.1",
+    "description": { "en": "This app log's text" },
+    "category": "tools",
+    "images": { "large": "assets/images/large.png", "small": "assets/images/small.png" },
     "compatibility": "0.x || 1.x",
     "author": {
         "name": "Geurt Dijker",
