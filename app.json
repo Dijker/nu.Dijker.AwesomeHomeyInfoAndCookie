@@ -1,12 +1,46 @@
 {
     "id": "nu.dijker.awesomehomeyinfoandcookie",
     "name": {
-        "en": "Awesome Homey Info and Cookie"
+        "en": "AwesomeHomeyInfoCookie"
     },
     "version": "0.0.1",
     "compatibility": "0.x || 1.x",
     "author": {
         "name": "Geurt Dijker",
         "email": "Homey.Apps@dijker.nu"
+    },
+    "flow": {
+      "triggers": [
+          {
+              "id": "programmatic_trigger",
+              "title": {
+                  "en" : "This Flow is triggered",
+                  "nl" : "Deze Flow is geactiveerd"
+              },
+              "tokens": [
+                  {
+                      "name": "myLog",
+                      "type": "string",
+                      "title": {
+                          "en": "Logfile",
+                          "nl": "Logbestand"
+                      },
+                      "example": "Log File content"
+                  }],
+                  "args": [
+                    {
+                        "name": "location",
+                        "type": "text"
+                    }
+                ]}
+            ],
+      "actions": [
+      {
+        "id": "programmatic_trigger",
+        "title": {
+          "en" : "Trigger a Flow",
+          "nl" : "Activeer een Flow"
+        }
+      }]
     }
 }
