@@ -6,7 +6,7 @@
     "description": { "en": "Just testing for AwesomeHomeyInfoAndCookie" },
     "category": "tools",
     "images": { "large": "assets/images/large.jpg", "small": "assets/images/small.jpg" },
-    "version": "0.0.3",
+    "version": "0.0.4",
     "compatibility": "0.x || 1.x",
     "author": {
         "name": "Geurt Dijker",
