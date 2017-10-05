@@ -13,19 +13,12 @@
         "email": "Homey.Apps@dijker.nu"
     },
     "contributing": {
-       "donate": [{
+       "donate": {
           "paypal": {
              "email": "Geurt@Dijker.nu",
              "currency": "EUR"
            }
-        },
-        {
-          "paypal": {
-             "email": "Homey.Apps@Dijker.nu",
-             "currency": "EUR"
-           }
-        }]
-
+        }
     },
     "flow": {
       "triggers": [
